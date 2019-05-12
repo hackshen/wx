@@ -72,3 +72,5 @@ def get_msg_chinese_type(msg_type):
 
 # 堵塞线程
 embed()
+
+# API --> https://wxpy.readthedocs.io
