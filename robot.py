@@ -2,7 +2,7 @@ import re
 from wxpy import *
 
 # 开启缓存
-bot = Bot(cache_path=True)
+bot = Bot(cache_path=True,console_qr=True)
 
 # 登录成功发送消息
 bot.file_helper.send('Hello Hackshen')
