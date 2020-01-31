@@ -4,7 +4,7 @@ services:
     image: python:3.4
     restart: always
     volumes:
-      - ./robot.py/:/robot/robot.py
+      - ./robot.py:/robot/robot.py
     command:
       - /bin/sh
       - -c
