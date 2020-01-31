@@ -1,0 +1,15 @@
+version: '3'
+services:
+  robot:
+    image: python:3.4
+    restart: always
+    volumes:
+      - ./robot.py/:/robot/robot.py
+    command:
+      - /bin/sh
+      - -c
+      - |
+        cd /robot/ \
+        && pip install -U wxpy \
+        && python robot.py
+
