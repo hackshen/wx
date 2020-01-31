@@ -10,6 +10,6 @@ services:
       - -c
       - |
         cd /robot/ \
-        && pip install -U wxpy \
+        && pip3 install -U wxpy \
         && python robot.py
 
