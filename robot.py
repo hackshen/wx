@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding=utf-8 -*-
+
 import re
 from wxpy import *
 
@@ -5,17 +8,17 @@ from wxpy import *
 bot = Bot(cache_path=True,console_qr=True)
 
 # 登录成功发送消息
-bot.file_helper.send('Hello Hackshen')
+bot.file_helper.send('Hello Hshen')
 
 # bot缓存历史消息条数
-bot.messages.max_history = 10000;
+bot.messages.max_history = 10000
 
 # 机器人账号自身
 myself = bot.self
 
-@bot.register()
+@bot.register(bot.friends())
 def system_msg(msg):
-    # 打印全部接收到的消息
+    # 只打印好友消息
     print(msg)
     raw = msg.raw
     # 4表示消息状态为撤回
@@ -72,8 +75,6 @@ def get_msg_chinese_type(msg_type):
 
 # 堵塞线程
 embed()
-
-# API --> https://wxpy.readthedocs.io
 
 
 
