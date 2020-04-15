@@ -1,0 +1,15 @@
+version: '3'
+services:
+  wx:
+    image: python:3.7
+    restart: always
+    volumes:
+      - ./robot.py:/robot.py
+    command:
+      - /bin/sh
+      - -c
+      - |
+        cd / \
+        && pip3 install -U wxpy -i "https://pypi.doubanio.com/simple/"
+        && python robot.py
+
