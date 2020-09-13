@@ -21,6 +21,6 @@ docker logs -f wx
 ###  常规版
 
 ```bash
-pip install -U wxpy -i "https://pypi.doubanio.com/simple/
+pip install -U wxpy -i "https://pypi.doubanio.com/simple/"
 python robot.py
 ```
