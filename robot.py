@@ -20,6 +20,9 @@ myself = bot.self
 def system_msg(msg):
     # 只打印好友消息
     print(msg)
+    conTent = msg.text
+    if '新年' in conTent:
+        msg.reply(conTent)
     raw = msg.raw
     # 4表示消息状态为撤回
     if raw['Status'] == 4:
